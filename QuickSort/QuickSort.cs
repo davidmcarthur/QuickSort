@@ -49,11 +49,13 @@ namespace QuickSort
             QuickSortHelper(arr, 0, arr.Length-1);
         }
         /// <summary>
-        /// 
+        /// QuickSortHelper allows us to pass chuncks of our Fibonacci number and index
+        /// it. This is required because each value of Fibonacci must be called from
+        /// Fib(n) all the way down to Fib(1) 
         /// </summary>
-        /// <param name="arr"></param>
-        /// <param name="startIdx"></param>
-        /// <param name="endIdx"></param>
+        /// <param name="arr">array passed</param>
+        /// <param name="startIdx">starting index</param>
+        /// <param name="endIdx">ending index</param>
         private static void QuickSortHelper(int[] arr, int startIdx, int endIdx)
         {
             if(startIdx < endIdx) // only need to sort if at least 2 elements
@@ -69,7 +71,7 @@ namespace QuickSort
         }
 
         /// <summary>
-        /// 
+        /// Partition is doing work so that our input can simply be a number from the user.
         /// </summary>
         /// <param name="arr"></param>
         /// <param name="startIdx"></param>
